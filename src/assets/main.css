@@ -1,0 +1,17 @@
+@font-face {
+    font-family: CalibreMedium;
+    src: url('@/assets/fonts/CalibreMedium.ttf');
+}
+
+@font-face {
+    font-family: SFMonoRegular;
+    src: url('@/assets/fonts/SFMonoRegular.woff');
+}
+
+* {
+    background-color: #0a192f;
+    color: #a8b2d1;
+    font-family: CalibreMedium;
+    font-size: 20px;
+    line-height: 1.3;
+}
