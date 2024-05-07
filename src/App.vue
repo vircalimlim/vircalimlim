@@ -8,22 +8,23 @@ import { RiGithubLine, RiLinkedinLine, RiInstagramLine } from '@remixicon/vue'
   <header>
     <AppHeader />
   </header>
-  <main class="flex justify-between my-10">
+  <main class="flex justify-between">
     <div class="w-[10%] hidden md:block text-center">
-      <ul class="flex flex-col items-center absolute bottom-0 left-8">
+      <ul class="flex flex-col items-center fixed bottom-0 left-8">
         <li class="py-3">
-          <a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer">
-            <RiGithubLine size="25px" class="hover:scale-125 hover:fill-[#64ffda]" />
+          <a href="https://github.com/vircalimlim" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <RiGithubLine size="25px" class="hover:scale-125 hover:fill-[#eb4432]" />
           </a>
         </li>
         <li class="py-3">
-          <a href="https://www.instagram.com/bchiang7" aria-label="Instagram" target="_blank" rel="noreferrer">
-            <RiInstagramLine size="25px" class="hover:scale-125 hover:fill-[#64ffda]" />
+          <a href="https://www.linkedin.com/in/virgilio-jr-calimlim-72203b245/" aria-label="Linkedin" target="_blank"
+            rel="noreferrer">
+            <RiLinkedinLine size="25px" class="hover:scale-125 hover:fill-[#eb4432]" />
           </a>
         </li>
         <li class="py-3">
-          <a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" target="_blank" rel="noreferrer">
-            <RiLinkedinLine size="25px" class="hover:scale-125 hover:fill-[#64ffda]" />
+          <a href="https://www.instagram.com/samp_xtacy/" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <RiInstagramLine size="25px" class="hover:scale-125 hover:fill-[#eb4432]" />
           </a>
         </li>
         <li class="pt-3">
@@ -31,13 +32,13 @@ import { RiGithubLine, RiLinkedinLine, RiInstagramLine } from '@remixicon/vue'
         </li>
       </ul>
     </div>
-    <div class="w-full">
+    <div class="w-full px-4">
       <RouterView />
     </div>
     <div class="w-[10%] hidden md:block text-center">
-      <ul class="flex flex-col items-center absolute bottom-0 right-8">
+      <ul class="flex flex-col items-center fixed bottom-0 right-8">
         <li class="py-3">
-          <a class="font-[SFMonoRegular] text-[12px] vertical-rl hover:text-[#64ffda] hover:scale-105"
+          <a class="font-[SFMonoRegular] text-[12px] vertical-rl hover:text-[#eb4432] hover:scale-105"
             href="mailto:virgiliocalimlim@gmail.com">virgiliocalimlim@gmail.com</a>
         </li>
         <li class="pt-3">
