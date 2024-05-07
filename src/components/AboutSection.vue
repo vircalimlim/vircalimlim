@@ -46,13 +46,6 @@
                     src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif" alt="Vir">
             </div>
         </div>
-        <!-- <div class="w-full md:w-[40%] mt-9 relative">
-            <div class="flex justify-center w-[100%] relative">
-                <img class="object-cover rounded h-64 w-64 relative z-10"
-                    src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif" alt="Vir">
-                <div class="border-4 h-64 w-64 border-red-900 absolute top-5 -right-5 bg-transparent"></div>
-            </div>
-        </div> -->
     </div>
 </template>
 
