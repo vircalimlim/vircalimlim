@@ -17,6 +17,10 @@
     .vertical-lr {
         writing-mode: vertical-lr;
     }
+
+    .text-main {
+        color: #eb4432;
+    }
 }
 
 @layer base {
