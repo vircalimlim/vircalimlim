@@ -24,20 +24,26 @@
                 <ul
                     class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent hover:text-[#eb4432]"
                             aria-current="page">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#techstack"
+                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">
+                            Tech Stack
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Experience</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Work</a>
+                        <a href="#project"
+                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Projects</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#contact"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Contact</a>
                     </li>
                     <li>
