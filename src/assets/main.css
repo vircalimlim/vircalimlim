@@ -1,6 +1,6 @@
 @font-face {
-    font-family: CalibreMedium;
-    src: url('@/assets/fonts/CalibreMedium.ttf');
+    font-family: CalibreRegular;
+    src: url('@/assets/fonts/CalibreRegular.ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 * {
     background-color: #0a192f;
     color: #a8b2d1;
-    font-family: CalibreMedium;
+    font-family: CalibreRegular;
     font-size: 20px;
     line-height: 1.3;
 }
