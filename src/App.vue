@@ -32,7 +32,7 @@ import { RiGithubLine, RiLinkedinLine, RiInstagramLine } from '@remixicon/vue'
         </li>
       </ul>
     </div>
-    <div class="w-full px-4">
+    <div class="w-full md:w-[80%] px-4">
       <RouterView />
     </div>
     <div class="w-[10%] hidden md:block text-center">
