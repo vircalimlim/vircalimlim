@@ -9,27 +9,11 @@
     <div class="flex items-start flex-wrap">
         <div class="w-full md:w-[60%] mt-5 font-[400]">
             <p class="my-4 text-justify">
-                Hello! My name is Virgilio and I enjoy creating things that live on the internet.
-                My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes —
-                turns out hacking
-                together a custom reblog button taught me a lot about HTML &amp; CSS!
-            </p>
-            <p class="my-4 text-justify">Fast-forward to today, and I’ve had the privilege of working at <a
-                    href="https://us.mullenlowe.com/" rel="noopener noreferrer" target="_blank">an advertising
-                    agency</a>,
-                <a href="https://starry.com/" rel="noopener noreferrer" target="_blank">a start-up</a>, <a
-                    href="https://www.apple.com/" rel="noopener noreferrer" target="_blank">a huge corporation</a>, and
-                <a href="https://scout.camd.northeastern.edu/" rel="noopener noreferrer" target="_blank">a student-led
-                    design studio</a>. My main focus these days is building accessible, inclusive products and digital
-                experiences at <a href="https://upstatement.com/" rel="noopener noreferrer"
-                    target="_blank">Upstatement</a>
-                for a variety of clients.
-            </p>
-            <p class="my-4 text-justify">I also recently <a
-                    href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer"
-                    target="_blank">launched a course</a> that covers everything you need to
-                build
-                a web app with the Spotify API using Node &amp; React.
+                I'm Vir, a backend developer with {{ new Date().getFullYear() - 2022 }}
+                years of experience and frontend
+                proficiency. I take pride in building strong backend systems that leverage my expertise to ensure smooth
+                operation. In addition, I enjoy creating intuitive user interfaces that integrate the frontend and
+                backend for a seamless user experience. Eager to collaborate and turn ideas into practical solutions!
             </p>
         </div>
         <div class="w-full md:w-[40%] mt-9 relative">
