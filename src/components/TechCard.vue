@@ -6,16 +6,15 @@ const props = defineProps({
 </script>
 
 <template>
-    <div
-        class="skill-wrapper flex flex-col justify-around items-center rounded bg-slate-100 h-16 w-16 hover:bg-slate-50 m-2">
+    <div class="skill-wrapper flex flex-col justify-around items-center rounded  h-16 w-16 hover:bg-gray-600 m-2">
         <img class="bg-transparent object-cover h-7 w-7 inline-block" :src="url" alt="tech-icon">
-        <span class="bg-transparent text-[12px] text-[#0a192f] font-semibold">{{ title }}</span>
+        <span class="bg-transparent text-[12px] font-semibold">{{ title }}</span>
     </div>
 </template>
 
 <style scoped>
 .skill-wrapper:hover {
-    scale: 1.05;
+    scale: 1.1;
 }
 
 .skill-wrapper:hover span {
