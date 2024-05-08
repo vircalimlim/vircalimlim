@@ -22,7 +22,7 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                 <ul
-                    class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    class="flex flex-col items-center font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
                         <a href="#about"
                             class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent hover:text-[#eb4432]"
@@ -47,9 +47,14 @@
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Contact</a>
                     </li>
                     <li>
-                        <a class="text-[#eb4432] border border-[#eb4432] rounded cursor-pointer px-3 py-2">Resume</a>
+                        <a class="button-pop-wrapper py-2">
+                            <span class="button-pop px-3 py-2">
+                                Resume
+                            </span>
+                        </a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>

@@ -47,9 +47,8 @@ onMounted(() => {
             </p>
         </div>
         <div class="mt-5">
-            <span class="border-2 border-transparent bg-transparent hover:bg-[#eb4432] py-3 rounded">
-                <button id="shakeButton"
-                    class="contact-button text-[#eb4432] border border-[#eb4432] rounded cursor-pointer bg-main px-10 py-3">
+            <span class="button-pop-wrapper py-3">
+                <button id="shakeButton" class="contact-button button-pop px-10 py-3">
                     Let's talk 👋
                 </button>
             </span>
@@ -86,9 +85,5 @@ onMounted(() => {
 
 .contact-button {
     transition: transform 0.3s ease;
-}
-
-.contact-button:hover {
-    transform: translate(-0.125rem, -0.375rem);
 }
 </style>
