@@ -6,15 +6,15 @@
         <h2 class="header-title text-[#ccd6f6] text-[32px] font-[600]">About me</h2>
     </div>
 
-    <div class="flex items-start flex-wrap pb-5">
+    <div class="flex items-start flex-wrap">
         <div class="w-full md:w-[60%] mt-5 font-[400]">
-            <p class="my-4">Hello! My name is Virgilio and I enjoy creating things that live on the internet. My
-                interest in
-                web
-                development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
+            <p class="my-4 text-justify">
+                Hello! My name is Virgilio and I enjoy creating things that live on the internet.
+                My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes —
+                turns out hacking
                 together a custom reblog button taught me a lot about HTML &amp; CSS!
             </p>
-            <p class="my-4">Fast-forward to today, and I’ve had the privilege of working at <a
+            <p class="my-4 text-justify">Fast-forward to today, and I’ve had the privilege of working at <a
                     href="https://us.mullenlowe.com/" rel="noopener noreferrer" target="_blank">an advertising
                     agency</a>,
                 <a href="https://starry.com/" rel="noopener noreferrer" target="_blank">a start-up</a>, <a
@@ -25,20 +25,12 @@
                     target="_blank">Upstatement</a>
                 for a variety of clients.
             </p>
-            <p class="my-4">I also recently <a href="https://www.newline.co/courses/build-a-spotify-connected-app"
-                    rel="noopener noreferrer" target="_blank">launched a course</a> that covers everything you need to
+            <p class="my-4 text-justify">I also recently <a
+                    href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer"
+                    target="_blank">launched a course</a> that covers everything you need to
                 build
                 a web app with the Spotify API using Node &amp; React.
             </p>
-            <p class="my-4">Skills I've learned through the years:</p>
-            <ul class="skills-list">
-                <li>JavaScript (ES6+)</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Eleventy</li>
-                <li>Node.js</li>
-                <li>WordPress</li>
-            </ul>
         </div>
         <div class="w-full md:w-[40%] mt-9 relative">
             <div class="flex justify-center image-container md:pl-2">
