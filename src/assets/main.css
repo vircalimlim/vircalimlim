@@ -14,4 +14,30 @@
     font-family: CalibreRegular;
     font-size: 20px;
     line-height: 1.3;
+
+    /* FireFox */
+    scrollbar-width: thin;
+    scrollbar-color: #495670 transparent;
+}
+
+/* Internet Explorer 11 */
+*::-ms-scrollbar {
+    scrollbar-color: #495670 transparent;
+}
+
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #495670;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
