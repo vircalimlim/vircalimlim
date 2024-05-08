@@ -21,6 +21,10 @@
     .text-main {
         color: #eb4432;
     }
+
+    .bg-main {
+        background-color: #0a192f;
+    }
 }
 
 @layer base {
