@@ -5,7 +5,7 @@ import TechCard from './TechCard.vue';
 
 <template>
     <div>
-        <h2 class="header-title text-[#ccd6f6] text-[32px] font-[600]">Technologies I've worked on</h2>
+        <h2 class="header-title text-[#ccd6f6] text-[32px] font-[600]">Tech Stack</h2>
     </div>
 
     <div class="mt-9 pl-5">
