@@ -10,7 +10,7 @@
         <div class="whitespace-nowrap hidden sm:block">
             <span class="text-sm font-semibold text-slate-500">August 2022 — Present</span>
         </div>
-        <div class="max-w-96">
+        <div class="max-w-md">
             <h3 class="text-lg text-slate-200">
                 Full Stack Developer · Speedy Recovery
             </h3>
