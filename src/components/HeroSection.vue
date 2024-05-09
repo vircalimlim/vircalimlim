@@ -33,10 +33,11 @@ onMounted(() => {
             <p class="font-[SFMonoRegular] text-[#eb4432]">Hi, my name is</p>
         </div>
         <div class="pb-2">
-            <h1 class="text-6xl font-extrabold text-[#ccd6f6]">Virgilio Calimlim.</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ccd6f6]">Virgilio Calimlim.</h1>
         </div>
         <div class="pb-5">
-            <h1 class="text-6xl text font-extrabold text-[#8892b0]">Artisan of web development.</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl text font-extrabold text-[#8892b0]">Artisan of web development.
+            </h1>
         </div>
         <div>
             <p class="w-full sm:w-4/5 md:w-3/5">
