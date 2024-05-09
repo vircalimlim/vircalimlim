@@ -8,14 +8,14 @@
 
     <div class="flex items-start space-x-2 sm:space-x-4 md:space-x-10 mt-9">
         <div class="whitespace-nowrap hidden sm:block">
-            <span class="text-sm font-semibold text-slate-500">2022 — Present</span>
+            <span class="text-sm font-semibold text-slate-500">August 2022 — Present</span>
         </div>
         <div class="max-w-96">
             <h3 class="text-lg text-slate-200">
                 Full Stack Developer · Speedy Recovery
             </h3>
             <div class="whitespace-nowrap block sm:hidden">
-                <span class="text-sm font-semibold text-slate-500">2022 — Present</span>
+                <span class="text-sm font-semibold text-slate-500">August 2022 — Present</span>
             </div>
             <ul class="experience-details">
                 <li class="text-justify">
@@ -23,7 +23,7 @@
                     assistance of our Senior Developer, collaborating closely with the project manager and the team. I
                     also helped design the database alongside our Senior Developer and assisted mobile developers with
                     API creation. Additionally, I contributed to an existing system using Laravel and Angular. My focus
-                    on quality included implementing unit testing throughout the process.
+                    on quality included implementing Unit Testing throughout the process.
                 </li>
                 <li class="text-justify">
                     Backend — Engineered the backend tech stack, database migrations,
