@@ -10,7 +10,7 @@ import TechCard from './TechCard.vue';
 
     <div class="mt-9 pl-5">
         <div class="">
-            <h1 class="skill-category text-xl">Main</h1>
+            <h1 class="skill-category text-lg text-slate-500">Main</h1>
             <div class="flex flex-wrap justify-start">
                 <TechCard title="PHP" url="/src/assets/icons/php.svg" />
                 <TechCard title="LARAVEL" url="/src/assets/icons/laravel.svg" />
@@ -29,12 +29,12 @@ import TechCard from './TechCard.vue';
             </div>
         </div>
         <div class="mt-5">
-            <h1 class="skill-category text-xl">Other</h1>
+            <h1 class="skill-category text-lg text-slate-500">Other</h1>
             <div class="flex flex-wrap justify-start">
-
+                <TechCard title="FLUTTER" url="/src/assets/icons/flutter.svg" />
                 <TechCard title="REACTJS" url="/src/assets/icons/reactjs.svg" />
                 <TechCard title="NEXTJS" url="/src/assets/icons/nextjs.svg" />
-                <TechCard title="FLUTTER" url="/src/assets/icons/flutter.svg" />
+                <TechCard title="HOSTINGER" url="/src/assets/icons/hostinger.svg" />
                 <TechCard title="CHAKRAUI" url="/src/assets/icons/chakraui.svg" />
                 <TechCard title="DAISYUI" url="/src/assets/icons/daisyui.svg" />
                 <TechCard title="JQUERY" url="/src/assets/icons/jquery.svg" />
