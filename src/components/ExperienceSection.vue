@@ -114,17 +114,20 @@
 }
 
 .experience-details li {
+    position: relative;
     font-size: 18px;
-    margin-right: 10px;
+    padding-left: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .experience-details li::before {
     content: '▶';
+    position: absolute;
+    left: 0;
+    top: 5px;
     color: #eb4432;
     font-size: 10px;
-    margin-right: 10px;
 }
 
 
