@@ -9,8 +9,6 @@
 }
 
 * {
-    background-color: #0a192f;
-    color: #a8b2d1;
     font-family: CalibreRegular;
     font-size: 20px;
     line-height: 1.3;
@@ -18,6 +16,11 @@
     /* FireFox */
     scrollbar-width: thin;
     scrollbar-color: #495670 transparent;
+}
+
+body {
+    background-color: #0a192f;
+    color: #a8b2d1;
 }
 
 /* Internet Explorer 11 */
