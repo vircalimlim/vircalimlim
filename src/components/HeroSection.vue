@@ -40,7 +40,7 @@ onMounted(() => {
             </h1>
         </div>
         <div>
-            <p class="w-full sm:w-4/5 md:w-3/5">
+            <p class="max-w-lg text-justify">
                 I'm software developer who is passionate about creating user-friendly applications from concept to
                 deployment. With problem-solving expertise and a commitment to staying current with industry trends, I
                 thrive in collaborative environments that foster creativity. Let's work together to create something
