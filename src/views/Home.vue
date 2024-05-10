@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HeroSection from '../components/HeroSection.vue'
-import AboutSection from '../components/AboutSection.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
 import SkillSection from '@/components/SkillSection.vue';
 import ExperienceSection from '@/components/ExperienceSection.vue';
 import ProjectSection from '@/components/ProjectSection.vue';
