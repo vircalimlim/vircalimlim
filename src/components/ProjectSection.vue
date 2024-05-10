@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TechButton from './TechButton.vue';
+
 </script>
 
 <template>
@@ -22,33 +24,7 @@
                     magni ipsam aspernatur. Modi deserunt eum soluta reiciendis qui quibusdam culpa sed laudantium,
                     assumenda voluptas praesentium consequatur!
                 </p>
-                <ul class="flex flex-wrap" aria-label="Technologies used">
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Laravel</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Php</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Mysql</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Vue</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Firebase</div>
-                    </li>
-                </ul>
+                <TechButton :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase']" />
             </div>
         </div>
 
@@ -66,33 +42,7 @@
                     magni ipsam aspernatur. Modi deserunt eum soluta reiciendis qui quibusdam culpa sed laudantium,
                     assumenda voluptas praesentium consequatur!
                 </p>
-                <ul class="flex flex-wrap" aria-label="Technologies used">
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Laravel</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Php</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Mysql</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Vue</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Firebase</div>
-                    </li>
-                </ul>
+                <TechButton :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase']" />
             </div>
         </div>
 
@@ -110,33 +60,7 @@
                     magni ipsam aspernatur. Modi deserunt eum soluta reiciendis qui quibusdam culpa sed laudantium,
                     assumenda voluptas praesentium consequatur!
                 </p>
-                <ul class="flex flex-wrap" aria-label="Technologies used">
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Laravel</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Php</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Mysql</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Vue</div>
-                    </li>
-                    <li class="mr-1.5 mt-2">
-                        <div
-                            class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                            Firebase</div>
-                    </li>
-                </ul>
+                <TechButton :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase']" />
             </div>
         </div>
 
