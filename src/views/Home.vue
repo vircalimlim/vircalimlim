@@ -2,6 +2,8 @@
 import HeroSection from '../components/HeroSection.vue'
 import AboutSection from '../components/AboutSection.vue'
 import SkillSection from '@/components/SkillSection.vue';
+import ExperienceSection from '@/components/ExperienceSection.vue';
+import ProjectSection from '@/components/ProjectSection.vue';
 </script>
 
 <template>
@@ -13,5 +15,11 @@ import SkillSection from '@/components/SkillSection.vue';
   </section>
   <section class="mt-20" id="techstack">
     <SkillSection />
+  </section>
+  <section class="mt-20" id="experience">
+    <ExperienceSection />
+  </section>
+  <section class="mt-20" id="project">
+    <ProjectSection />
   </section>
 </template>
