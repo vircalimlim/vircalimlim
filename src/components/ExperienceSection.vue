@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TechButton from './TechButton.vue';
 </script>
 
 <template>
@@ -39,63 +40,8 @@
                     for accurate implementation, delivering high-quality frontend solutions.
                 </li>
             </ul>
-            <ul class="flex flex-wrap" aria-label="Technologies used">
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Laravel</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Php</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Mysql</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Vue</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Firebase</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Bootstrap</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Aws</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Linux</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Html</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Css</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Javascript</div>
-                </li>
-            </ul>
+            <TechButton
+                :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase', 'Aws', 'Bootstrap', 'Linux', 'Javascript', 'Css', 'Html']" />
         </div>
     </div>
 </template>
