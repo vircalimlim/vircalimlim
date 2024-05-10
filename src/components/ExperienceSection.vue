@@ -19,11 +19,15 @@
             </div>
             <ul class="experience-details">
                 <li class="text-justify">
-                    Led the development of an eCommerce Web App using Laravel and Vue.js from scratch with the
-                    assistance of our Senior Developer, collaborating closely with the project manager and the team. I
+                    Led the development of an eCommerce Web App using Laravel and Vue.js from scratch, collaborating
+                    closely with the project manager and the team. I
                     also helped design the database alongside our Senior Developer and assisted mobile developers with
-                    API creation. Additionally, I contributed to an existing system using Laravel and Angular. My focus
-                    on quality included implementing Unit Testing throughout the process.
+                    API creation. Additionally, I contributed to an existing system using Laravel and Angular.
+                    Implemented Unit Testing throughout the process.
+                </li>
+                <li class="text-justify">
+                    Integrated various APIs, including Clickpay, HyperPay, and Tabby for payment integration, as well as
+                    the Google Analytics API to enhance data-driven decision-making processes.
                 </li>
                 <li class="text-justify">
                     Backend — Engineered the backend tech stack, database migrations,
@@ -32,7 +36,7 @@
                 <li class="text-justify">
                     Frontend — Utilized Vue.js and Bootstrap to create visually appealing interfaces from Figma designs.
                     Ensured cross-browser compatibility and mobile responsiveness. Collaborated closely with UI designer
-                    for accurate implementation, delivering high-quality frontend solutions meeting project needs.
+                    for accurate implementation, delivering high-quality frontend solutions.
                 </li>
             </ul>
             <ul class="flex flex-wrap" aria-label="Technologies used">
@@ -74,6 +78,11 @@
                 <li class="mr-1.5 mt-2">
                     <div
                         class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
+                        Linux</div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div
+                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
                         Html</div>
                 </li>
                 <li class="mr-1.5 mt-2">
@@ -85,11 +94,6 @@
                     <div
                         class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
                         Javascript</div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                    <div
-                        class="flex items-center rounded-full bg-red-500 px-3 py-1 text-xs font-bold leading-5 text-white hover:bg-red-400">
-                        Linux</div>
                 </li>
             </ul>
         </div>
