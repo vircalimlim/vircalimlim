@@ -30,7 +30,7 @@ onMounted(() => {
 <template>
     <div class="">
         <div class="pb-6">
-            <p class="font-[SFMonoRegular] text-[#eb4432]">Hi, my name is</p>
+            <p class="font-[SFMonoRegular] text-[#eb4432]">Hello world, I am</p>
         </div>
         <div class="pb-2">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ccd6f6]">Virgilio Calimlim.</h1>
