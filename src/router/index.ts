@@ -27,7 +27,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from) => {
-  document.title = to.meta.title ?? 'Portfolio | Virgilio Calimlim';
+  document.title = (to.meta.title as string) ?? 'Portfolio | Virgilio Calimlim';
 });
 
 export default router
