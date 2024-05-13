@@ -2,8 +2,8 @@
 import { onMounted } from 'vue'
 
 onMounted(() => {
-    var button = document.getElementById('shakeButton');
-    var shakingInterval;
+    var button = document.getElementById('shakeButton')!;
+    var shakingInterval: number | undefined;
 
     function startShaking() {
         shakingInterval = setInterval(function () {
