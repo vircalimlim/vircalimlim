@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import { RiGithubLine, RiLinkedinLine, RiInstagramLine } from '@remixicon/vue'
+import AppFooter from './components/AppFooter.vue';
 </script>
 
 <template>
@@ -48,6 +49,6 @@ import { RiGithubLine, RiLinkedinLine, RiInstagramLine } from '@remixicon/vue'
     </div>
   </main>
   <footer>
-
+    <AppFooter />
   </footer>
 </template>
