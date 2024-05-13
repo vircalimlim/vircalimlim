@@ -12,32 +12,32 @@ import TechCard from './TechCard.vue';
         <div class="">
             <h1 class="skill-category text-lg text-slate-500">Main</h1>
             <div class="flex flex-wrap justify-start">
-                <TechCard title="PHP" url="/src/assets/icons/php.svg" />
-                <TechCard title="LARAVEL" url="/src/assets/icons/laravel.svg" />
-                <TechCard title="MYSQL" url="/src/assets/icons/mysql.svg" />
-                <TechCard title="VUEJS" url="/src/assets/icons/vuejs.svg" />
-                <TechCard title="NUXTJS" url="/src/assets/icons/nuxtjs.svg" />
-                <TechCard title="NODEJS" url="/src/assets/icons/nodejs.svg" />
-                <TechCard title="TYPESCRIPT" url="/src/assets/icons/typescript.svg" />
-                <TechCard title="FIREBASE" url="/src/assets/icons/firebase.svg" />
-                <TechCard title="TAILWIND" url="/src/assets/icons/tailwind.svg" />
-                <TechCard title="BOOTSTRAP" url="/src/assets/icons/bootstrap5.svg" />
-                <TechCard title="HTML" url="/src/assets/icons/html.svg" />
-                <TechCard title="CSS" url="/src/assets/icons/css.svg" />
-                <TechCard title="JAVASCRIPT" url="/src/assets/icons/javascript.svg" />
+                <TechCard title="PHP" url="/public/icons/php.svg" />
+                <TechCard title="LARAVEL" url="/public/icons/laravel.svg" />
+                <TechCard title="MYSQL" url="/public/icons/mysql.svg" />
+                <TechCard title="VUEJS" url="/public/icons/vuejs.svg" />
+                <TechCard title="NUXTJS" url="/public/icons/nuxtjs.svg" />
+                <TechCard title="NODEJS" url="/public/icons/nodejs.svg" />
+                <TechCard title="TYPESCRIPT" url="/public/icons/typescript.svg" />
+                <TechCard title="FIREBASE" url="/public/icons/firebase.svg" />
+                <TechCard title="TAILWIND" url="/public/icons/tailwind.svg" />
+                <TechCard title="BOOTSTRAP" url="/public/icons/bootstrap5.svg" />
+                <TechCard title="HTML" url="/public/icons/html.svg" />
+                <TechCard title="CSS" url="/public/icons/css.svg" />
+                <TechCard title="JAVASCRIPT" url="/public/icons/javascript.svg" />
 
             </div>
         </div>
         <div class="mt-5">
             <h1 class="skill-category text-lg text-slate-500">Other</h1>
             <div class="flex flex-wrap justify-start">
-                <TechCard title="FLUTTER" url="/src/assets/icons/flutter.svg" />
-                <TechCard title="REACTJS" url="/src/assets/icons/reactjs.svg" />
-                <TechCard title="NEXTJS" url="/src/assets/icons/nextjs.svg" />
-                <TechCard title="HOSTINGER" url="/src/assets/icons/hostinger.svg" />
-                <TechCard title="CHAKRAUI" url="/src/assets/icons/chakraui.svg" />
-                <TechCard title="DAISYUI" url="/src/assets/icons/daisyui.svg" />
-                <TechCard title="JQUERY" url="/src/assets/icons/jquery.svg" />
+                <TechCard title="FLUTTER" url="/public/icons/flutter.svg" />
+                <TechCard title="REACTJS" url="/public/icons/reactjs.svg" />
+                <TechCard title="NEXTJS" url="/public/icons/nextjs.svg" />
+                <TechCard title="HOSTINGER" url="/public/icons/hostinger.svg" />
+                <TechCard title="CHAKRAUI" url="/public/icons/chakraui.svg" />
+                <TechCard title="DAISYUI" url="/public/icons/daisyui.svg" />
+                <TechCard title="JQUERY" url="/public/icons/jquery.svg" />
             </div>
         </div>
     </div>
