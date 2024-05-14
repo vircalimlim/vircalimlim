@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { gsap } from "gsap";
 
-const onBeforeEnter = (el: Object) => {
-    el.style.opacity = 0;
+const onBeforeEnter: any = (el: HTMLElement) => {
+    el.style.opacity = '0';
     el.style.transform = 'translateY(-100px)'
 }
 
-const enter = (el: Object, done) => {
+const enter: any = (el: HTMLElement, done: () => void) => {
     gsap.to(el, {
         duration: 2.5,
         y: 0,
