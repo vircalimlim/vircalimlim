@@ -1,11 +1,25 @@
-@font-face {
+/* @font-face {
     font-family: CalibreRegular;
     src: url('@/assets/fonts/CalibreRegular.ttf');
+} */
+
+/* @font-face {
+    font-family: SFMonoRegular;
+    src: url('@/assets/fonts/SFMonoRegular.woff');
+} */
+
+@font-face {
+    font-family: CalibreRegular;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CalibreRegular"), url('@/assets/fonts/CalibreRegular.ttf'), url('@/assets/fonts/CalibreRegular.ttf')  format("ttf");
 }
 
 @font-face {
     font-family: SFMonoRegular;
-    src: url('@/assets/fonts/SFMonoRegular.woff');
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("SFMonoRegular"), url('@/assets/fonts/SFMonoRegular.woff'), url('@/assets/fonts/SFMonoRegular.woff')  format("woff");
 }
 
 * {
