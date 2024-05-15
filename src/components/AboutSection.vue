@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import FadeInTransition from './FadeInTransition.vue';
+
 </script>
 
 <template>
@@ -6,23 +8,28 @@
         <h2 class="header-title text-[#ccd6f6] text-[32px] font-[600]">About me</h2>
     </div>
 
-    <div class="flex items-start flex-wrap">
-        <div class="w-full md:w-[60%] mt-5 font-[400]">
-            <p class="my-4 text-justify">
-                I'm Vir, a backend developer with {{ new Date().getFullYear() - 2022 }}
-                years of experience and frontend
-                proficiency. I take pride in building strong backend systems that leverage my expertise to ensure smooth
-                operation. In addition, I enjoy creating intuitive user interfaces that integrate the frontend and
-                backend for a seamless user experience. Eager to collaborate and turn ideas into practical solutions!
-            </p>
-        </div>
-        <div class="w-full md:w-[40%] mt-9 relative">
-            <div class="flex justify-center image-container md:pl-2">
-                <img class="object-cover rounded z-10 mx-auto"
-                    src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif" alt="Vir">
+    <FadeInTransition>
+        <div class="flex items-start flex-wrap">
+            <div class="w-full md:w-[60%] mt-5 font-[400]">
+                <p class="my-4 text-justify">
+                    I'm Vir, a backend developer with {{ new Date().getFullYear() - 2022 }}
+                    years of experience and frontend
+                    proficiency. I take pride in building strong backend systems that leverage my expertise to ensure
+                    smooth
+                    operation. In addition, I enjoy creating intuitive user interfaces that integrate the frontend and
+                    backend for a seamless user experience. Eager to collaborate and turn ideas into practical
+                    solutions!
+                </p>
+            </div>
+            <div class="w-full md:w-[40%] mt-9 relative">
+                <div class="flex justify-center image-container md:pl-2">
+                    <img class="object-cover rounded z-10 mx-auto"
+                        src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
+                        alt="Vir">
+                </div>
             </div>
         </div>
-    </div>
+    </FadeInTransition>
 </template>
 
 <style scoped>

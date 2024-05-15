@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FadeInTransition from './FadeInTransition.vue';
 import TechButton from './TechButton.vue';
 </script>
 
@@ -19,26 +20,38 @@ import TechButton from './TechButton.vue';
                 <span class="text-sm font-semibold text-slate-500">August 2022 — Present</span>
             </div>
             <ul class="experience-details">
-                <li class="text-justify">
-                    Led the development of an eCommerce Web App using Laravel and Vue.js from scratch, collaborating
-                    closely with the project manager and the team. I
-                    also helped design the database alongside our Senior Developer and assisted mobile developers with
-                    API creation. Additionally, I contributed to an existing system using Laravel and Angular.
-                    Implemented Unit Testing throughout the process.
-                </li>
-                <li class="text-justify">
-                    Integrated various APIs, including Clickpay, HyperPay, and Tabby for payment integration, as well as
-                    the Google Analytics API to enhance data-driven decision-making processes.
-                </li>
-                <li class="text-justify">
-                    Backend — Engineered the backend tech stack, database migrations,
-                    scripting, CRON jobs, security, unit testing and REST API.
-                </li>
-                <li class="text-justify">
-                    Frontend — Utilized Vue.js and Bootstrap to create visually appealing interfaces from Figma designs.
-                    Ensured cross-browser compatibility and mobile responsiveness. Collaborated closely with UI designer
-                    for accurate implementation, delivering high-quality frontend solutions.
-                </li>
+                <FadeInTransition>
+                    <li class="text-justify">
+                        Led the development of an eCommerce Web App using Laravel and Vue.js from scratch, collaborating
+                        closely with the project manager and the team. I
+                        also helped design the database alongside our Senior Developer and assisted mobile developers
+                        with
+                        API creation. Additionally, I contributed to an existing system using Laravel and Angular.
+                        Implemented Unit Testing throughout the process.
+                    </li>
+                </FadeInTransition>
+                <FadeInTransition>
+                    <li class="text-justify">
+                        Integrated various APIs, including Clickpay, HyperPay, and Tabby for payment integration, as
+                        well as
+                        the Google Analytics API to enhance data-driven decision-making processes.
+                    </li>
+                </FadeInTransition>
+                <FadeInTransition>
+                    <li class="text-justify">
+                        Backend — Engineered the backend tech stack, database migrations,
+                        scripting, CRON jobs, security, unit testing and REST API.
+                    </li>
+                </FadeInTransition>
+                <FadeInTransition>
+                    <li class="text-justify">
+                        Frontend — Utilized Vue.js and Bootstrap to create visually appealing interfaces from Figma
+                        designs.
+                        Ensured cross-browser compatibility and mobile responsiveness. Collaborated closely with UI
+                        designer
+                        for accurate implementation, delivering high-quality frontend solutions.
+                    </li>
+                </FadeInTransition>
             </ul>
             <TechButton
                 :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase', 'Aws', 'Bootstrap', 'Linux', 'Javascript', 'Css', 'Html']" />

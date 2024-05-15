@@ -1,6 +1,31 @@
 <script setup lang="ts">
 import TechCard from './TechCard.vue';
 
+const main_techs = [
+    { title: 'PHP', url: 'php.svg' },
+    { title: 'LARAVEL', url: 'laravel.svg' },
+    { title: 'MYSQL', url: 'mysql.svg' },
+    { title: 'VUEJS', url: 'vuejs.svg' },
+    { title: 'NUXTJS', url: 'nuxtjs.svg' },
+    { title: 'NODEJS', url: 'nodejs.svg' },
+    { title: 'typescript', url: 'typescript.svg' },
+    { title: 'firebase', url: 'firebase.svg' },
+    { title: 'tailwind', url: 'tailwind.svg' },
+    { title: 'bootstrap', url: 'bootstrap5.svg' },
+    { title: 'html', url: 'html.svg' },
+    { title: 'css', url: 'css.svg' },
+    { title: 'javascript', url: 'javascript.svg' },
+]
+
+const other_techs = [
+    { title: 'flutter', url: 'flutter.svg' },
+    { title: 'reactjs', url: 'reactjs.svg' },
+    { title: 'nextjs', url: 'nextjs.svg' },
+    { title: 'chakraui', url: 'chakraui.svg' },
+    { title: 'daisyui', url: 'daisyui.svg' },
+    { title: 'jquery', url: 'jquery.svg' },
+]
+
 </script>
 
 <template>
@@ -12,32 +37,13 @@ import TechCard from './TechCard.vue';
         <div class="">
             <h1 class="skill-category text-lg text-slate-500">Main</h1>
             <div class="flex flex-wrap justify-start">
-                <TechCard title="PHP" url="/icons/php.svg" />
-                <TechCard title="LARAVEL" url="/icons/laravel.svg" />
-                <TechCard title="MYSQL" url="/icons/mysql.svg" />
-                <TechCard title="VUEJS" url="/icons/vuejs.svg" />
-                <TechCard title="NUXTJS" url="/icons/nuxtjs.svg" />
-                <TechCard title="NODEJS" url="/icons/nodejs.svg" />
-                <TechCard title="TYPESCRIPT" url="/icons/typescript.svg" />
-                <TechCard title="FIREBASE" url="/icons/firebase.svg" />
-                <TechCard title="TAILWIND" url="/icons/tailwind.svg" />
-                <TechCard title="BOOTSTRAP" url="/icons/bootstrap5.svg" />
-                <TechCard title="HTML" url="/icons/html.svg" />
-                <TechCard title="CSS" url="/icons/css.svg" />
-                <TechCard title="JAVASCRIPT" url="/icons/javascript.svg" />
-
+                <TechCard :techs="main_techs" />
             </div>
         </div>
         <div class="mt-5">
             <h1 class="skill-category text-lg text-slate-500">Other</h1>
             <div class="flex flex-wrap justify-start">
-                <TechCard title="FLUTTER" url="/icons/flutter.svg" />
-                <TechCard title="REACTJS" url="/icons/reactjs.svg" />
-                <TechCard title="NEXTJS" url="/icons/nextjs.svg" />
-                <TechCard title="HOSTINGER" url="/icons/hostinger.svg" />
-                <TechCard title="CHAKRAUI" url="/icons/chakraui.svg" />
-                <TechCard title="DAISYUI" url="/icons/daisyui.svg" />
-                <TechCard title="JQUERY" url="/icons/jquery.svg" />
+                <TechCard :techs="other_techs" />
             </div>
         </div>
     </div>
