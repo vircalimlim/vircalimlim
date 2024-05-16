@@ -26,11 +26,11 @@ import StaggerAnimation from './components/StaggerAnimation.vue';
             <RiLinkedinLine size="25px" class="hover:scale-125 hover:fill-[#eb4432]" />
           </a>
         </li>
-        <li class="py-3" :data-index="2">
+        <!-- <li class="py-3" :data-index="2">
           <a href="https://www.instagram.com/samp_xtacy/" aria-label="Instagram" target="_blank" rel="noreferrer">
             <RiInstagramLine size="25px" class="hover:scale-125 hover:fill-[#eb4432]" />
           </a>
-        </li>
+        </li> -->
         <li class="pt-3">
           <div class="h-28 border-r border-gray-400"></div>
         </li>
