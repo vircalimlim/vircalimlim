@@ -5,7 +5,7 @@
 <template>
 
     <nav>
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 pt-5 pb-10">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="/icons/logo-2.svg" class="h-14" alt="brand" />
                 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">VirCalimlim</span> -->
