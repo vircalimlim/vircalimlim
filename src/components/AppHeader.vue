@@ -7,7 +7,7 @@
     <nav>
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-10">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://laravel.com/img/logomark.min.svg" class="h-8" alt="Flowbite Logo" />
+                <img src="/icons/logo-2.svg" class="h-14" alt="brand" />
                 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">VirCalimlim</span> -->
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button"
