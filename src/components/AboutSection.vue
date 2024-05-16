@@ -22,10 +22,9 @@ import FadeInTransition from './FadeInTransition.vue';
                 </p>
             </div>
             <div class="w-full md:w-[40%] mt-9 relative">
-                <div class="flex justify-center image-container md:pl-2">
-                    <img class="object-cover rounded z-10 mx-auto"
-                        src="https://v4.brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-                        alt="Vir">
+                <div class="flex justify-center md:pl-2">
+                    <img class="w-[75%] sm:w-[70%] md:w-[90%] object-cover rounded z-10 mx-auto"
+                        src="/icons/programming.svg" alt="Vir">
                 </div>
             </div>
         </div>
