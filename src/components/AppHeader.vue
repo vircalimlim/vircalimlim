@@ -4,7 +4,13 @@ import { ref } from 'vue'
 const isOpen = ref(false)
 
 const scrollToSection = (target: string) => {
-    isOpen.value = !isOpen.value //close menu
+    isOpen.value = false //close menu
+    if (isOpen.value) {
+        document.body.style.overflow = 'hidden'
+    }
+    else {
+        document.body.style.overflow = 'visible'
+    }
 
     const element = document.querySelector(target);
     if (element) {
@@ -14,6 +20,13 @@ const scrollToSection = (target: string) => {
 
 const toggleMenu = () => {
     isOpen.value = !isOpen.value
+
+    if (isOpen.value == true) {
+        document.body.style.overflow = 'hidden'
+    }
+    else {
+        document.body.style.overflow = 'visible'
+    }
 }
 
 </script>
