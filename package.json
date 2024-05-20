@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@remixicon/vue": "^4.2.0",
+    "@types/smoothscroll-polyfill": "^0.3.4",
     "gsap": "^3.12.5",
+    "smoothscroll-polyfill": "^0.4.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

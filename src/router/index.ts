@@ -12,7 +12,19 @@ const router = createRouter({
         title: 'Virgilio Calimlim'
       }
     },
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return { ...savedPosition, behavior: 'smooth' };
+    } else if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    } else {
+      return { top: 0, behavior: 'smooth' };
+    }
+  }
 })
 
 router.beforeEach((to, from) => {

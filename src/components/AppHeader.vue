@@ -1,5 +1,10 @@
 <script setup lang="ts">
-
+const scrollToSection = (target: string) => {
+    const element = document.querySelector(target);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 </script>
 
 <template>
@@ -24,26 +29,26 @@
                 <ul
                     class="flex flex-col items-center font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
-                        <a href="#about"
+                        <a @click.prevent="scrollToSection('#about')" href="#about"
                             class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent hover:text-[#eb4432]"
                             aria-current="page">About</a>
                     </li>
                     <li>
-                        <a href="#techstack"
+                        <a @click.prevent="scrollToSection('#techstack')" href="#techstack"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">
                             Tech Stack
                         </a>
                     </li>
                     <li>
-                        <a href="#experience"
+                        <a @click.prevent="scrollToSection('#experience')" href="#experience"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Experience</a>
                     </li>
                     <li>
-                        <a href="#project"
+                        <a @click.prevent="scrollToSection('#project')" href="#project"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact"
+                        <a @click.prevent="scrollToSection('#contact')" href="#contact"
                             class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#eb4432]">Contact</a>
                     </li>
                     <li>
