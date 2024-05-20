@@ -83,7 +83,7 @@ const toggleMenu = () => {
                         </svg>
                     </span>
 
-                    <ul class="flex flex-col items-center space-y-3 md:hidden font-medium mt-20">
+                    <ul class="flex flex-col items-center space-y-2 md:hidden font-medium mt-20">
                         <li>
                             <a @click.prevent="scrollToSection('#about')" href="#about"
                                 class="text-[25px] block py-2 px-3 text-white rounded bg-transparent hover:text-[#eb4432]"
