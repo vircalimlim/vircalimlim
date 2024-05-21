@@ -21,7 +21,7 @@ const detectOnScroll = () => {
         const callback = (entries: Array<any>, observer: object) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry.target.id)
+                    // console.log(entry.target.id)
                     whereSection.value = entry.target.id
                 }
             });
