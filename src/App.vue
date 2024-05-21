@@ -36,7 +36,7 @@ import StaggerAnimation from './components/StaggerAnimation.vue';
         </li>
       </StaggerAnimation>
     </div>
-    <div class="w-full md:w-[80%] px-4">
+    <div class="w-full md:w-[80%] px-2 sm:px-4">
       <RouterView />
     </div>
     <div class="w-[10%] hidden md:block text-center">
