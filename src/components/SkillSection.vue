@@ -40,7 +40,7 @@ const other_techs = [
         <h2 class="header-title text-[#ccd6f6] text-[32px] font-[600]">Tech Stack</h2>
     </div>
 
-    <div class="mt-9 pl-5">
+    <div class="mt-9">
         <div class="">
             <!-- <h1 class="skill-category text-lg text-slate-500">Main</h1> -->
             <div class="max-w-lg flex flex-wrap justify-start">

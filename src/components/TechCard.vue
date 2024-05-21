@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <StaggerAnimation class="flex flex-wrap justify-start">
+    <StaggerAnimation class="flex flex-wrap justify-center sm:justify-start">
         <li v-for="(tech, index) in techs"
             class="skill-wrapper flex flex-col justify-around items-center rounded  h-16 w-16 hover:bg-gray-600 p-1 my-2"
             :data-index="index">
