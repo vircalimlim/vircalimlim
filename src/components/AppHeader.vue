@@ -1,14 +1,43 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const isOpen = ref(false)
+const whereSection = ref('')
+
+onMounted(() => {
+    detectOnScroll()
+})
+
+const detectOnScroll = () => {
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+
+        const options = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.4 // trigger when 40% of the section is in view
+        };
+
+        const callback = (entries: Array<any>, observer: object) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target.id)
+                    whereSection.value = entry.target.id
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+}
 
 const scrollToSection = (target: string) => {
     isOpen.value = false //close menu
-    if (isOpen.value) {
-        document.body.style.overflow = 'hidden'
-    }
-    else {
+    if (!isOpen.value) {
         document.body.style.overflow = 'visible'
     }
 
@@ -33,8 +62,9 @@ const toggleMenu = () => {
 
 <template>
 
-    <nav>
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 pt-5 pb-10">
+    <nav class="relative max-w-screen-xl mx-auto z-20">
+        <div
+            class="fixed top-0 right-0 left-0 bg-[#0a192f] max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 pt-4 pb-2">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="/icons/logo-2.svg" class="h-14" alt="brand" />
                 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">VirCalimlim</span> -->
@@ -52,26 +82,31 @@ const toggleMenu = () => {
                     class="flex flex-col items md:items-center font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent">
                     <li>
                         <a @click.prevent="scrollToSection('#about')" href="#about"
-                            class="block py-2 px-3 md:p-0 text-white rounded bg-transparent hover:text-[#eb4432]"
+                            :class="whereSection == 'about' ? 'text-[#eb4432]' : 'text-gray-300'"
+                            class="block py-2 px-3 md:p-0 rounded bg-transparent hover:text-[#eb4432]"
                             aria-current="page">About</a>
                     </li>
                     <li>
                         <a @click.prevent="scrollToSection('#techstack')" href="#techstack"
-                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">
+                            :class="whereSection == 'techstack' ? 'text-[#eb4432]' : 'text-gray-300'"
+                            class="block py-2 px-3 md:p-0 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">
                             Tech Stack
                         </a>
                     </li>
                     <li>
                         <a @click.prevent="scrollToSection('#experience')" href="#experience"
-                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Experience</a>
+                            :class="whereSection == 'experience' ? 'text-[#eb4432]' : 'text-gray-300'"
+                            class="block py-2 px-3 md:p-0 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Experience</a>
                     </li>
                     <li>
                         <a @click.prevent="scrollToSection('#project')" href="#project"
-                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Projects</a>
+                            :class="whereSection == 'project' ? 'text-[#eb4432]' : 'text-gray-300'"
+                            class="block py-2 px-3 md:p-0 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Projects</a>
                     </li>
                     <li>
                         <a @click.prevent="scrollToSection('#contact')" href="#contact"
-                            class="block py-2 px-3 md:p-0 text-gray-300 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Contact</a>
+                            :class="whereSection == 'contact' ? 'text-[#eb4432]' : 'text-gray-300'"
+                            class="block py-2 px-3 md:p-0 rounded hover:bg-transparent md:border-0 hover:text-[#eb4432]">Contact</a>
                     </li>
                     <li>
                         <a class="button-pop-wrapper py-2">
@@ -99,26 +134,31 @@ const toggleMenu = () => {
                     <ul class="flex flex-col items-center space-y-2 md:hidden font-medium mt-20">
                         <li>
                             <a @click.prevent="scrollToSection('#about')" href="#about"
-                                class="text-[25px] block py-2 px-3 text-white rounded bg-transparent hover:text-[#eb4432]"
+                                :class="whereSection == 'about' ? 'text-[#eb4432]' : 'text-gray-300'"
+                                class="text-[25px] block py-2 px-3 rounded bg-transparent hover:text-[#eb4432]"
                                 aria-current="page">About</a>
                         </li>
                         <li>
                             <a @click.prevent="scrollToSection('#techstack')" href="#techstack"
-                                class="text-[25px] block py-2 px-3 text-gray-300 rounded hover:bg-transparent hover:text-[#eb4432]">
+                                :class="whereSection == 'techstack' ? 'text-[#eb4432]' : 'text-gray-300'"
+                                class="text-[25px] block py-2 px-3 rounded hover:bg-transparent hover:text-[#eb4432]">
                                 Tech Stack
                             </a>
                         </li>
                         <li>
                             <a @click.prevent="scrollToSection('#experience')" href="#experience"
-                                class="text-[25px] block py-2 px-3 text-gray-300 rounded hover:bg-transparent hover:text-[#eb4432]">Experience</a>
+                                :class="whereSection == 'experience' ? 'text-[#eb4432]' : 'text-gray-300'"
+                                class="text-[25px] block py-2 px-3 rounded hover:bg-transparent hover:text-[#eb4432]">Experience</a>
                         </li>
                         <li>
                             <a @click.prevent="scrollToSection('#project')" href="#project"
-                                class="text-[25px] block py-2 px-3 text-gray-300 rounded hover:bg-transparent hover:text-[#eb4432]">Projects</a>
+                                :class="whereSection == 'project' ? 'text-[#eb4432]' : 'text-gray-300'"
+                                class="text-[25px] block py-2 px-3 rounded hover:bg-transparent hover:text-[#eb4432]">Projects</a>
                         </li>
                         <li>
                             <a @click.prevent="scrollToSection('#contact')" href="#contact"
-                                class="text-[25px] block py-2 px-3 text-gray-300 rounded hover:bg-transparent hover:text-[#eb4432]">Contact</a>
+                                :class="whereSection == 'contact' ? 'text-[#eb4432]' : 'text-gray-300'"
+                                class="text-[25px] block py-2 px-3 rounded hover:bg-transparent hover:text-[#eb4432]">Contact</a>
                         </li>
                         <li>
                             <a class="button-pop-wrapper py-2">
@@ -132,5 +172,7 @@ const toggleMenu = () => {
             </div>
         </div>
     </nav>
-
+    <section class="mt-20 py-4">
+        <!-- for spacing between the navbar and hero section -->
+    </section>
 </template>

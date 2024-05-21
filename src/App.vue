@@ -12,7 +12,7 @@ import StaggerAnimation from './components/StaggerAnimation.vue';
   <header>
     <AppHeader />
   </header>
-  <main class="flex justify-between">
+  <main class="max-w-screen-xl mx-auto flex justify-between">
     <div class="w-[10%] hidden md:block text-center">
       <StaggerAnimation class="flex flex-col items-center fixed bottom-0 left-8">
         <li class="py-3" :data-index="0">
