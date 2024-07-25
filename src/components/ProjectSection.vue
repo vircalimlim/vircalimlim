@@ -15,7 +15,7 @@ import TechButton from './TechButton.vue';
             description="TokoShop offers a user-friendly interface for online shopping, where users can browse, select, and purchase various products. Key features include browsing products, managing orders, and user login. The design is modern and responsive, aiming to provide a seamless shopping experience."
             :techs="['Nextjs', 'Firebase', 'Axios', 'Stripe', 'ChakraUi']" />
 
-        <ProjectCard url="https://react-next-shopping.vercel.app" imgUrl="/images/movies.PNG" project_name="TMDB Cinema"
+        <ProjectCard url="https://vpc-movies.vercel.app" imgUrl="/images/movies.PNG" project_name="TMDB Cinema"
             description="TMDB Cinema is a movie discovery platform using TMDB api, where you can explore popular, top-rated, and upcoming movies. Watch trailers for specific films, search for your favorite movies, and view detailed information about each one. The site features infinite scrolling for a seamless browsing experience, making it easy to find your next favorite film."
             :techs="['React', 'React Router', 'Bootstrap', 'Axios', 'TMDB API']" />
 
