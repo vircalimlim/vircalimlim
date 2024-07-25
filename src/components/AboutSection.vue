@@ -12,7 +12,7 @@ import FadeInTransition from './FadeInTransition.vue';
         <div class="flex items-start flex-wrap">
             <div class="w-full md:w-[60%] mt-5 font-[400]">
                 <p class="my-4 text-justify">
-                    I'm Vir, a software developer with {{ new Date().getFullYear() - 2022 }}
+                    I'm Vir, a backend developer with {{ new Date().getFullYear() - 2022 }}
                     years of experience and frontend
                     proficiency. I take pride in building strong backend systems that leverage my expertise to ensure
                     smooth
