@@ -110,9 +110,9 @@ const toggleMenu = () => {
                     </li>
                     <li>
                         <a class="button-pop-wrapper py-2">
-                            <span class="button-pop px-3 py-2">
+                            <a href="/resume.pdf" target="_blank" class="button-pop px-3 py-2">
                                 Resume
-                            </span>
+                            </a>
                         </a>
                     </li>
                 </ul>
@@ -162,9 +162,10 @@ const toggleMenu = () => {
                         </li>
                         <li>
                             <a class="button-pop-wrapper py-2">
-                                <span class="text-[25px] button-pop px-3 py-2">
+                                <a href="/resume.pdf" target="_blank" class="text-[25px] button-pop px-3 py-2">
                                     Resume
-                                </span>
+                                </a>
+
                             </a>
                         </li>
                     </ul>
