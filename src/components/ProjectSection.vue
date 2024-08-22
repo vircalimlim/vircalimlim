@@ -19,7 +19,7 @@ import TechButton from './TechButton.vue';
             description="TMDB Cinema is a movie discovery platform using TMDB api, where you can explore popular, top-rated, and upcoming movies. Watch trailers for specific films, search for your favorite movies, and view detailed information about each one. The site features infinite scrolling for a seamless browsing experience, making it easy to find your next favorite film."
             :techs="['React', 'React Router', 'Bootstrap', 'Axios', 'TMDB API']" />
 
-        <div
+        <!-- <div
             class="flex flex-wrap-reverse sm:flex-nowrap items-start space-y-4 sm:space-y-0 space-y-reverse sm:space-x-5 md:space-x-8 p-4 mb-2 rounded hover:bg-slate-700">
             <div class="w-lg">
                 <img class="w-48 h-24 sm:h-20 object-cover rounded shadow-xl cursor-pointer"
@@ -35,7 +35,7 @@ import TechButton from './TechButton.vue';
                 </p>
                 <TechButton :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase']" />
             </div>
-        </div>
+        </div> -->
 
     </div>
 </template>
