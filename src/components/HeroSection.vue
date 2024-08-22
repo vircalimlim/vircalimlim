@@ -46,7 +46,7 @@ onMounted(() => {
         <FadeInTransition>
             <div>
                 <p class="max-w-lg text-justify">
-                    I'm software developer who is passionate about creating user-friendly applications from concept to
+                    I'm Full Stack Developer who is passionate about creating user-friendly applications from concept to
                     deployment. With problem-solving expertise and a commitment to staying current with industry trends,
                     I
                     thrive in collaborative environments that foster creativity. Let's work together to create something

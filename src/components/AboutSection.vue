@@ -12,9 +12,9 @@ import FadeInTransition from './FadeInTransition.vue';
         <div class="flex items-start flex-wrap">
             <div class="w-full md:w-[60%] mt-5 font-[400]">
                 <p class="my-4 text-justify">
-                    I'm Vir, a backend developer with {{ new Date().getFullYear() - 2022 }}
-                    years of experience and frontend
-                    proficiency. I take pride in building strong backend systems that leverage my expertise to ensure
+                    I'm Vir, a Full Stack Developer with {{ new Date().getFullYear() - 2022 }}
+                    years of experience. I take pride in building strong backend systems that leverage my expertise to
+                    ensure
                     smooth
                     operation. In addition, I enjoy creating intuitive user interfaces that integrate the frontend and
                     backend for a seamless user experience. Eager to collaborate and turn ideas into practical
