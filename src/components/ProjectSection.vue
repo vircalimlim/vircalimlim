@@ -1,7 +1,59 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import ProjectCarousel from './ProjectCarousel.vue';
 import ProjectCard from './ProjectCard.vue';
 import TechButton from './TechButton.vue';
 
+const projects = ref([
+    {
+        url: '',
+        thumbnail: '/images/timein/home.PNG',
+        title: 'Attendance Management System',
+        description: 'The Attendance Management System allows users to clock in and out, while admins can monitor attendance, create schedules and holidays, manage employee profiles including company and position details and record payroll. It also provides reporting capabilities on various employee metrics.',
+        techs: ['Laravel', 'Vue3', 'Bootstrap', 'MySql', 'Axios'],
+        images: ['/images/timein/home.PNG', '/images/timein/dashboard.PNG', '/images/timein/user.PNG', '/images/timein/register.PNG', '/images/timein/schedule.PNG', '/images/timein/attendance.PNG', '/images/timein/reports.PNG', '/images/timein/payroll.PNG',],
+    },
+    {
+        url: 'https://react-next-shopping.vercel.app',
+        thumbnail: '/images/tokoshop.PNG',
+        title: 'TokoShop',
+        description: 'TokoShop offers a user-friendly interface for online shopping, where users can browse, select, and purchase various products. Key features include browsing products, managing orders, and user login. The design is modern and responsive, aiming to provide a seamless shopping experience.',
+        techs: ['Nextjs', 'Firebase', 'Axios', 'Stripe', 'ChakraUi'],
+    },
+    {
+        url: 'https://vpc-movies.vercel.app',
+        thumbnail: '/images/movies.PNG',
+        title: 'TMDB Cinema',
+        description: 'TMDB Cinema is a movie discovery platform using TMDB api, where you can explore popular, top-rated, and upcoming movies. Watch trailers for specific films, search for your favorite movies, and view detailed information about each one. The site features infinite scrolling for a seamless browsing experience, making it easy to find your next favorite film.',
+        techs: ['React', 'React Router', 'Bootstrap', 'Axios', 'TMDB API'],
+    },
+]);
+const carousel_images = ref<string[]>([]);
+const is_carousel_open = ref(false);
+
+const showCarouselImage = (images?: Array<string>) => {
+    is_carousel_open.value = true;
+
+    if(!images){
+        carousel_images.value = [];
+        return false;
+    }
+
+    if (is_carousel_open.value) {
+        document.body.style.overflow = 'hidden';
+    }
+
+    carousel_images.value = images;
+}
+
+const hideCarousel = () => {
+    is_carousel_open.value = false;
+    if (!is_carousel_open.value) {
+        document.body.style.overflow = 'visible';
+    }
+
+    carousel_images.value = [];
+}
 </script>
 
 <template>
@@ -10,33 +62,12 @@ import TechButton from './TechButton.vue';
     </div>
 
     <div class="mt-5">
-
-        <ProjectCard url="https://react-next-shopping.vercel.app" imgUrl="/images/tokoshop.PNG" project_name="TokoShop"
-            description="TokoShop offers a user-friendly interface for online shopping, where users can browse, select, and purchase various products. Key features include browsing products, managing orders, and user login. The design is modern and responsive, aiming to provide a seamless shopping experience."
-            :techs="['Nextjs', 'Firebase', 'Axios', 'Stripe', 'ChakraUi']" />
-
-        <ProjectCard url="https://vpc-movies.vercel.app" imgUrl="/images/movies.PNG" project_name="TMDB Cinema"
-            description="TMDB Cinema is a movie discovery platform using TMDB api, where you can explore popular, top-rated, and upcoming movies. Watch trailers for specific films, search for your favorite movies, and view detailed information about each one. The site features infinite scrolling for a seamless browsing experience, making it easy to find your next favorite film."
-            :techs="['React', 'React Router', 'Bootstrap', 'Axios', 'TMDB API']" />
-
-        <!-- <div
-            class="flex flex-wrap-reverse sm:flex-nowrap items-start space-y-4 sm:space-y-0 space-y-reverse sm:space-x-5 md:space-x-8 p-4 mb-2 rounded hover:bg-slate-700">
-            <div class="w-lg">
-                <img class="w-48 h-24 sm:h-20 object-cover rounded shadow-xl cursor-pointer"
-                    src="https://blog.masterofproject.com/wp-content/uploads/2019/10/project-plan-example-2.jpg"
-                    alt="project-image">
+        <div v-if="carousel_images.length > 0" class="fixed top-0 right-0 z-50 h-full w-full backdrop-blur-sm">
+            <div @click.self="hideCarousel" class="h-full flex items-center">
+                <ProjectCarousel :images="carousel_images" @handleClose="hideCarousel"/>
             </div>
-            <div class="w-full flex flex-col space-y-2">
-                <h3 class="text-lg text-slate-200">Project Name</h3>
-                <p class="text-justify text-[18px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laborum minus aut voluptatibus
-                    magni ipsam aspernatur. Modi deserunt eum soluta reiciendis qui quibusdam culpa sed laudantium,
-                    assumenda voluptas praesentium consequatur!
-                </p>
-                <TechButton :techs="['Laravel', 'Php', 'Mysql', 'Vue', 'Firebase']" />
-            </div>
-        </div> -->
-
+        </div>
+        <ProjectCard v-for="project in projects" @handleCarousel="showCarouselImage" :project="project" />
     </div>
 </template>
 
