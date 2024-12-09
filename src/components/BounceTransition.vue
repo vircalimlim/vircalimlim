@@ -14,7 +14,7 @@ const enter: any = (el: HTMLElement, done: () => void) => {
             trigger: el,
             start: 'top bottom',
         },
-        duration: 2.5,
+        duration: .8,
         y: 0,
         opacity: 1,
         ease: 'bounce.out',

@@ -36,14 +36,19 @@ onMounted(() => {
             <p class="font-[SFMonoRegular] text-[#eb4432]">Hello world, I am</p>
         </div>
         <div class="pb-2">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#ccd6f6]">Virgilio Calimlim.</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8892b0]">Virgilio Calimlim</h1>
         </div>
-        <div class="pb-5">
+        <div class="pb-2">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl text font-extrabold text-[#ccd6f6]">
+                Full Stack Developer.
+            </h1>
+        </div>
+        <!-- <div class="pb-5">
             <h1 class="text-4xl sm:text-5xl md:text-6xl text font-extrabold text-[#8892b0]">Artisan of web
                 development.
             </h1>
-        </div>
-        <FadeInTransition>
+        </div> -->
+        <!-- <FadeInTransition>
             <div>
                 <p class="max-w-lg text-justify">
                     I'm Full Stack Developer who is passionate about creating user-friendly applications from concept to
@@ -53,7 +58,7 @@ onMounted(() => {
                     amazing!
                 </p>
             </div>
-        </FadeInTransition>
+        </FadeInTransition> -->
         <BounceTransition>
             <div class="mt-5">
                 <span class="button-pop-wrapper py-3">

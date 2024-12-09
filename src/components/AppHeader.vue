@@ -80,12 +80,12 @@ const toggleMenu = () => {
             <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                 <ul
                     class="flex flex-col items md:items-center font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent">
-                    <li>
+                    <!-- <li>
                         <a @click.prevent="scrollToSection('#about')" href="#about"
                             :class="whereSection == 'about' ? 'text-[#eb4432]' : 'text-gray-300'"
                             class="block py-2 px-3 md:p-0 rounded bg-transparent hover:text-[#eb4432]"
                             aria-current="page">About</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a @click.prevent="scrollToSection('#techstack')" href="#techstack"
                             :class="whereSection == 'techstack' ? 'text-[#eb4432]' : 'text-gray-300'"
@@ -132,12 +132,12 @@ const toggleMenu = () => {
                     </span>
 
                     <ul class="flex flex-col items-center space-y-2 md:hidden font-medium mt-20">
-                        <li>
+                        <!-- <li>
                             <a @click.prevent="scrollToSection('#about')" href="#about"
                                 :class="whereSection == 'about' ? 'text-[#eb4432]' : 'text-gray-300'"
                                 class="text-[25px] block py-2 px-3 rounded bg-transparent hover:text-[#eb4432]"
                                 aria-current="page">About</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a @click.prevent="scrollToSection('#techstack')" href="#techstack"
                                 :class="whereSection == 'techstack' ? 'text-[#eb4432]' : 'text-gray-300'"

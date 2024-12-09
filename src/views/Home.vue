@@ -11,9 +11,9 @@ import ContactSection from '@/components/ContactSection.vue';
   <section id="hero">
     <HeroSection />
   </section>
-  <section class="pt-20" id="about">
+  <!-- <section class="pt-20" id="about">
     <AboutSection />
-  </section>
+  </section> -->
   <section class="pt-20" id="techstack">
     <SkillSection />
   </section>
