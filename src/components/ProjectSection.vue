@@ -7,6 +7,14 @@ import TechButton from './TechButton.vue';
 const projects = ref([
     {
         url: '',
+        thumbnail: '/images/3prs/home.PNG',
+        title: 'Research Management System',
+        description: 'The system allows admins to manage user keys by generating and releasing them for students based on their semester scope and ensuring key encryption for security. Admins can post achievements, updates, and announcements, upload and categorize materials, and restrict students from downloading, printing, or copying these materials. Students can search and filter uploaded materials using keywords while being restricted from performing unauthorized actions like downloading, printing, or copying content. The system validates login keys upon access, logs user visits to materials.',
+        techs: ['Laravel', 'Vue3', 'Inertia', 'MySql', 'Tailwind'],
+        images: ['/images/3prs/home.PNG', '/images/3prs/dashboard.PNG', '/images/3prs/admin-achievements.PNG', '/images/3prs/admin-material.PNG', '/images/3prs/announcements.PNG', '/images/3prs/achievement.PNG', '/images/3prs/research.PNG'],
+    },
+    {
+        url: '',
         thumbnail: '/images/timein/home.PNG',
         title: 'Attendance Management System',
         description: 'The Attendance Management System allows users to clock in and out, while admins can monitor attendance, create schedules and holidays, manage employee profiles including company and position details and record payroll. It also provides reporting capabilities on various employee metrics.',
